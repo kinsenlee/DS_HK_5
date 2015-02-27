@@ -1,0 +1,59 @@
+lahmanID, Unique number assigned to each player
+playerID, A unique code asssigned to each player.  The playerID links the data in this file with records in the other files.
+managerID, An ID for individuals who served as managers
+hofID, An ID for individuals who are in teh baseball Hall of Fame
+birthYear, Year player was born
+birthMonth, Month player was born
+birthDay, Day player was born
+birthCountry, Country where player was born
+birthState, State where player was born
+birthCity, City where player was born
+deathYear, Year player died
+deathMonth, Month player died
+deathDay, Day player died
+deathCountry, Country where player died
+deathState, State where player died
+deathCity, City where player died
+nameFirst, Player's first name
+nameLast, Player's last name
+nameNote, Note about player's name (usually signifying that they changed their name or played under two differnt names)
+nameGiven, Player's given name (typically first and middle)
+nameNick, Player's nickname
+weight, Player's weight in pounds
+height, Player's height in inches
+bats, Player's batting hand (left, right, or both)
+throws, Player's throwing hand (left or right)
+debut, Date that player made first major league appearance
+finalGame, Date that player made first major league appearance (blank if still active)
+college, College attended
+lahman40ID, ID used in Lahman Database version 4.0
+lahman45ID, ID used in Lahman database version 4.5
+retroID, ID used by retrosheet
+holtzID, ID used by Sean Holtz's Baseball Almanac
+bbrefID, ID used by Baseball Reference website
+deathDate,Date of Death
+birthDate,Date of Birth
+yearID, Year
+stint, player's stint (order of appearances within a season)
+teamID, Team
+lgID, League
+G, Games
+G_batting, Game as batter
+AB, At Bats
+R, Runs
+H, Hits
+2B, Doubles
+3B, Triples
+HR, Homeruns
+RBI, Runs Batted In
+SB, Stolen Bases
+CS, Caught Stealing
+BB, Base on Balls
+SO, Strikeouts
+IBB, Intentional walks
+HBP, Hit by pitch
+SH, Sacrifice hits
+SF, Sacrifice flies
+GIDP, Grounded into double plays
+G_Old, Old version of games (deprecated)
+salary, Salary
