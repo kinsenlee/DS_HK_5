@@ -18,9 +18,11 @@ def getColumn(line,idx):
 # For each line, find the sum of index 0,2 & 3 in the list.
 for line in lines:
 	line = line.strip().split(',')
+	
 	age = age + getColumn(line, 0)
 	impressions = impressions + getColumn(line, 2)
 	clicks = clicks + getColumn(line, 3)
+	
 	max_age = max(max_age, getColumn(line, 0))
  
 print 'No. Impressions:', impressions
