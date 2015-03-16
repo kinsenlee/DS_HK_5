@@ -117,3 +117,33 @@ def is_identity_matrix(matrix):
     return all(val == (x == y)
         for y, row in enumerate(matrix)
             for x, val in enumerate(row))
+
+
+# Commented version of the Matrix * Vector Multiplication
+
+def matrix_vector_mult3(m, v):
+    # Count the number of rows in the matrix     
+    rows = len(m)
+    # Prepare a vector to store the results, it will be the same length as the matrix has rows.
+    result = [0]*rows
+    # Count the number of colums in the matrix, it's the same as the length of the vector
+    cols = len(v)
+    # Matrix multiplication is about summing the item-by-item results of a matrix-row and vector multiplication
+    # So initialise the counter to 0     
+    sum = 0
+    # Now comes the iteration logic. We multiple row for row with the vector, so we first iterate through the matrix' rows
+    for row in range(rows):
+        # 'row' isn't actually the row, but merely refers to the position of the row, so let's save the actual row.         
+        r = m[row]
+        # The second step of the iteration logic is to loop through all the items in both the matrix' row and the vector,
+        # and to multiple them
+        for col in range(cols):
+            # with each iteration, the result of m[row][col] and v[col] is added to the sum
+            # the sum is 'complete' when all items are iterated through.             
+            sum = sum + r[col] * v[col]
+        # Now we drop back to the outer loop, and store the result of the inner loop, that is the 'sum' into the right 
+        # position in the result vector. The sum is reset to 0 and the next iteration of the outer loop is ready to begin.
+        # If this is still cryptic, read up on multiple assignment in python.
+        result[row], sum = sum, 0
+    # Now that also the outer loop is finished, we can return the full result.
+    return result
