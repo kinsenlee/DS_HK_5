@@ -104,4 +104,4 @@ dfx = dfg["Clicks", "Impressions"].mean()
 dfx["CTR"] = dfx["Clicks"] / dfx["Impressions"]
 
 # Only export the relevant data, CTR with indices.
-dfx["CTR"].to_csv(DATA_DIR + 'nytimes_agg_CTR.csv')
+dfx    ["CTR"].to_csv(DATA_DIR + 'nytimes_agg_CTR.csv')
