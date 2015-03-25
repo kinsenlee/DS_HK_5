@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700|PT+Mono|Roboto+Slab:400,700);
-/* 
+/*
 
 Hyrule Theme for iPython Notebooks
 
@@ -62,6 +62,9 @@ li {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+img {
+  max-width: 100%;
 }
 img[alt="break"] {
   width: 8rem;
@@ -147,6 +150,7 @@ p.resource-container a:hover div {
 }
 .CodeMirror {
   font-family: 'PT Mono', monospace;
+  font-size: 18px;
 }
 /* Based on Sublime Text's Monokai theme */
 .CodeMirror-lines {
